@@ -1,0 +1,325 @@
+[
+    {
+        "label": "randrange",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "bianry_search",
+        "kind": 2,
+        "importPath": "binary_search",
+        "description": "binary_search",
+        "peekOfCode": "def bianry_search(list,item):\n  low = 0\n  high = len(list)\n  while low<high and high>0 and low>=0:\n    mid = (high+low)//2\n    guess = list[mid]\n    if guess == item:\n      return mid\n    elif guess>item:\n      high = mid - 1",
+        "detail": "binary_search",
+        "documentation": {}
+    },
+    {
+        "label": "myList",
+        "kind": 5,
+        "importPath": "binary_search",
+        "description": "binary_search",
+        "peekOfCode": "myList = [1,3,4,6,7,8,10,12,23,45,56,78,99]\nitem = 23\n#item = int(input())\nprint(bianry_search(myList,item))",
+        "detail": "binary_search",
+        "documentation": {}
+    },
+    {
+        "label": "item",
+        "kind": 5,
+        "importPath": "binary_search",
+        "description": "binary_search",
+        "peekOfCode": "item = 23\n#item = int(input())\nprint(bianry_search(myList,item))",
+        "detail": "binary_search",
+        "documentation": {}
+    },
+    {
+        "label": "#item",
+        "kind": 5,
+        "importPath": "binary_search",
+        "description": "binary_search",
+        "peekOfCode": "#item = int(input())\nprint(bianry_search(myList,item))",
+        "detail": "binary_search",
+        "documentation": {}
+    },
+    {
+        "label": "b_sort",
+        "kind": 2,
+        "importPath": "buble_sort",
+        "description": "buble_sort",
+        "peekOfCode": "def b_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n    return arr\narr = [2,14,6,4,3,3,15,3,18,8]\nprint(b_sort(arr))",
+        "detail": "buble_sort",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "buble_sort",
+        "description": "buble_sort",
+        "peekOfCode": "arr = [2,14,6,4,3,3,15,3,18,8]\nprint(b_sort(arr))",
+        "detail": "buble_sort",
+        "documentation": {}
+    },
+    {
+        "label": "sum",
+        "kind": 2,
+        "importPath": "divide_sum",
+        "description": "divide_sum",
+        "peekOfCode": "def sum(arr):\n  if len(arr)==1:\n    return 1\n  else:\n    return arr.pop()+sum(arr)\narr = [1,15,8,6,2,5,4,8,9,5,0]\nprint(sum(arr=arr))",
+        "detail": "divide_sum",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "divide_sum",
+        "description": "divide_sum",
+        "peekOfCode": "arr = [1,15,8,6,2,5,4,8,9,5,0]\nprint(sum(arr=arr))",
+        "detail": "divide_sum",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "fuktarial",
+        "description": "fuktarial",
+        "peekOfCode": "n = int(input())\nf = 1\nfor i in range(1,n+1):\n  f *= i\nprint(f)",
+        "detail": "fuktarial",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 5,
+        "importPath": "fuktarial",
+        "description": "fuktarial",
+        "peekOfCode": "f = 1\nfor i in range(1,n+1):\n  f *= i\nprint(f)",
+        "detail": "fuktarial",
+        "documentation": {}
+    },
+    {
+        "label": "gcd",
+        "kind": 2,
+        "importPath": "gcd",
+        "description": "gcd",
+        "peekOfCode": "def gcd(a,b):\n    if a==0:\n        return b\n    if a>b:\n        a,b=b,a\n    return gcd(b-a,a)\nprint(gcd(168,64))",
+        "detail": "gcd",
+        "documentation": {}
+    },
+    {
+        "label": "lin_search",
+        "kind": 2,
+        "importPath": "linear_search",
+        "description": "linear_search",
+        "peekOfCode": "def lin_search(myList,x):\n  for i in range(len(myList)):\n    if myList[i]==x:\n      return i\n  return None\nprint(lin_search(myList,x))",
+        "detail": "linear_search",
+        "documentation": {}
+    },
+    {
+        "label": "myList",
+        "kind": 5,
+        "importPath": "linear_search",
+        "description": "linear_search",
+        "peekOfCode": "myList = [1,3,4,6,7,8,10,12,23,45,56,78,99]\n# myList = [i for i in input().split()]\nx = int(input())\ndef lin_search(myList,x):\n  for i in range(len(myList)):\n    if myList[i]==x:\n      return i\n  return None\nprint(lin_search(myList,x))",
+        "detail": "linear_search",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "linear_search",
+        "description": "linear_search",
+        "peekOfCode": "x = int(input())\ndef lin_search(myList,x):\n  for i in range(len(myList)):\n    if myList[i]==x:\n      return i\n  return None\nprint(lin_search(myList,x))",
+        "detail": "linear_search",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "kind": 6,
+        "importPath": "linked_list",
+        "description": "linked_list",
+        "peekOfCode": "class Node:\n  def __init__(self,data) -> None:\n    self.data = data\n    self.next = None\nclass Linkedlist:\n  def __init__(self):\n    self.head = None\n  def printList(self):\n    temp = self.head\n    while temp:",
+        "detail": "linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "Linkedlist",
+        "kind": 6,
+        "importPath": "linked_list",
+        "description": "linked_list",
+        "peekOfCode": "class Linkedlist:\n  def __init__(self):\n    self.head = None\n  def printList(self):\n    temp = self.head\n    while temp:\n      print(temp.data)\n      temp = temp.next\n  def push(self,new_data):\n    new_data = Node(new_data)",
+        "detail": "linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "llist",
+        "kind": 5,
+        "importPath": "linked_list",
+        "description": "linked_list",
+        "peekOfCode": "llist = Linkedlist()\nllist.head = Node(\"Dushanba\")\nl2 = Node('Seshanba')\nllist.head.next = l2\nl3 = Node(\"Chorshanba\")\nl2.next = l3\nl4 = Node(\"Payshanba\")\nl3.next = l4\n#print(llist.head.next.next.data)\nprint(llist.push(\"Juma\"))",
+        "detail": "linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "llist.head",
+        "kind": 5,
+        "importPath": "linked_list",
+        "description": "linked_list",
+        "peekOfCode": "llist.head = Node(\"Dushanba\")\nl2 = Node('Seshanba')\nllist.head.next = l2\nl3 = Node(\"Chorshanba\")\nl2.next = l3\nl4 = Node(\"Payshanba\")\nl3.next = l4\n#print(llist.head.next.next.data)\nprint(llist.push(\"Juma\"))\nprint(llist.printList())",
+        "detail": "linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "l2",
+        "kind": 5,
+        "importPath": "linked_list",
+        "description": "linked_list",
+        "peekOfCode": "l2 = Node('Seshanba')\nllist.head.next = l2\nl3 = Node(\"Chorshanba\")\nl2.next = l3\nl4 = Node(\"Payshanba\")\nl3.next = l4\n#print(llist.head.next.next.data)\nprint(llist.push(\"Juma\"))\nprint(llist.printList())",
+        "detail": "linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "llist.head.next",
+        "kind": 5,
+        "importPath": "linked_list",
+        "description": "linked_list",
+        "peekOfCode": "llist.head.next = l2\nl3 = Node(\"Chorshanba\")\nl2.next = l3\nl4 = Node(\"Payshanba\")\nl3.next = l4\n#print(llist.head.next.next.data)\nprint(llist.push(\"Juma\"))\nprint(llist.printList())",
+        "detail": "linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "l3",
+        "kind": 5,
+        "importPath": "linked_list",
+        "description": "linked_list",
+        "peekOfCode": "l3 = Node(\"Chorshanba\")\nl2.next = l3\nl4 = Node(\"Payshanba\")\nl3.next = l4\n#print(llist.head.next.next.data)\nprint(llist.push(\"Juma\"))\nprint(llist.printList())",
+        "detail": "linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "l2.next",
+        "kind": 5,
+        "importPath": "linked_list",
+        "description": "linked_list",
+        "peekOfCode": "l2.next = l3\nl4 = Node(\"Payshanba\")\nl3.next = l4\n#print(llist.head.next.next.data)\nprint(llist.push(\"Juma\"))\nprint(llist.printList())",
+        "detail": "linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "l4",
+        "kind": 5,
+        "importPath": "linked_list",
+        "description": "linked_list",
+        "peekOfCode": "l4 = Node(\"Payshanba\")\nl3.next = l4\n#print(llist.head.next.next.data)\nprint(llist.push(\"Juma\"))\nprint(llist.printList())",
+        "detail": "linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "l3.next",
+        "kind": 5,
+        "importPath": "linked_list",
+        "description": "linked_list",
+        "peekOfCode": "l3.next = l4\n#print(llist.head.next.next.data)\nprint(llist.push(\"Juma\"))\nprint(llist.printList())",
+        "detail": "linked_list",
+        "documentation": {}
+    },
+    {
+        "label": "a,b,c",
+        "kind": 5,
+        "importPath": "max_son_tree",
+        "description": "max_son_tree",
+        "peekOfCode": "a,b,c = map(int,input().split())\nif a>b and a>c:print(a)\nelif b>a and b>c:print(b)\nelif c>a and c>b:print(c)",
+        "detail": "max_son_tree",
+        "documentation": {}
+    },
+    {
+        "label": "multiple",
+        "kind": 2,
+        "importPath": "multiple",
+        "description": "multiple",
+        "peekOfCode": "def multiple(a,b):\n  return a+b\na,b = map(int,input().split())\nprint(multiple(a,b))",
+        "detail": "multiple",
+        "documentation": {}
+    },
+    {
+        "label": "a,b",
+        "kind": 5,
+        "importPath": "multiple",
+        "description": "multiple",
+        "peekOfCode": "a,b = map(int,input().split())\nprint(multiple(a,b))",
+        "detail": "multiple",
+        "documentation": {}
+    },
+    {
+        "label": "quicksort",
+        "kind": 2,
+        "importPath": "quicksort",
+        "description": "quicksort",
+        "peekOfCode": "def quicksort(arr):\n  if len(arr)<2:\n    return arr\n  else:\n    pivot = arr.pop(randrange(len(arr)))\n    high = [i for i in arr if i>pivot]\n    low = [i for i in arr if i<pivot]\n    return quicksort(low) + [pivot] + quicksort(high)\narr = [1,5,4,8,9,6,5,7,4,2,5,15,3,10,23,51]\nprint(quicksort(arr=arr))",
+        "detail": "quicksort",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "quicksort",
+        "description": "quicksort",
+        "peekOfCode": "arr = [1,5,4,8,9,6,5,7,4,2,5,15,3,10,23,51]\nprint(quicksort(arr=arr))",
+        "detail": "quicksort",
+        "documentation": {}
+    },
+    {
+        "label": "factorial",
+        "kind": 2,
+        "importPath": "rekursiya",
+        "description": "rekursiya",
+        "peekOfCode": "def factorial(x):\n  if x>0:\n    if x==1:\n      return 1\n    else:\n      return  x*factorial(x-1)\nprint(factorial(5))",
+        "detail": "rekursiya",
+        "documentation": {}
+    },
+    {
+        "label": "max",
+        "kind": 2,
+        "importPath": "selection_sort",
+        "description": "selection_sort",
+        "peekOfCode": "def max(arr):\n  t = arr[0]\n  for i in arr:\n    if i>t:\n      t = i\n  return t\ndef selection_sort(arr):\n  sorted_arr = []\n  while arr:\n    a = max(arr)",
+        "detail": "selection_sort",
+        "documentation": {}
+    },
+    {
+        "label": "selection_sort",
+        "kind": 2,
+        "importPath": "selection_sort",
+        "description": "selection_sort",
+        "peekOfCode": "def selection_sort(arr):\n  sorted_arr = []\n  while arr:\n    a = max(arr)\n    sorted_arr.append(a)\n    arr.remove(a)\n  return sorted_arr\narr = [12,35,6,58,4,5,6,9,45,8]\nprint(selection_sort(arr))",
+        "detail": "selection_sort",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "selection_sort",
+        "description": "selection_sort",
+        "peekOfCode": "arr = [12,35,6,58,4,5,6,9,45,8]\nprint(selection_sort(arr))",
+        "detail": "selection_sort",
+        "documentation": {}
+    },
+    {
+        "label": "Stack",
+        "kind": 6,
+        "importPath": "stack",
+        "description": "stack",
+        "peekOfCode": "class Stack:\n    def __init__(self) -> None:\n        self.stack = []\n    def isEmpty(self):\n        return len(self.stack) == 0\n    def push(self, data):\n        self.stack.append(data)\n        return 'Done'\n    def pop(self):\n        if self.isEmpty():",
+        "detail": "stack",
+        "documentation": {}
+    },
+    {
+        "label": "stack",
+        "kind": 5,
+        "importPath": "stack",
+        "description": "stack",
+        "peekOfCode": "stack = Stack()\nprint(stack.isEmpty())\nprint(stack.peek())\nprint(stack.push(5))\nprint(stack.push(2))\nprint(stack.pop())",
+        "detail": "stack",
+        "documentation": {}
+    }
+]
