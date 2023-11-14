@@ -233,6 +233,33 @@
         "documentation": {}
     },
     {
+        "label": "merge_sort",
+        "kind": 2,
+        "importPath": "merge_sort",
+        "description": "merge_sort",
+        "peekOfCode": "def merge_sort(arr):\n    if len(arr) > 1:\n        middle = len(arr) // 2\n        left_half = arr[:middle]\n        right_half = arr[middle:]\n        merge_sort(left_half)\n        merge_sort(right_half)\n        i = j = k = 0\n        while i < len(left_half) and j < len(right_half):\n            if left_half[i] < right_half[j]:",
+        "detail": "merge_sort",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "merge_sort",
+        "description": "merge_sort",
+        "peekOfCode": "arr = [1, 5, 4, 8, 9, 6, 3]\nsorted_arr = merge_sort(arr.copy())\nprint(sorted_arr)",
+        "detail": "merge_sort",
+        "documentation": {}
+    },
+    {
+        "label": "sorted_arr",
+        "kind": 5,
+        "importPath": "merge_sort",
+        "description": "merge_sort",
+        "peekOfCode": "sorted_arr = merge_sort(arr.copy())\nprint(sorted_arr)",
+        "detail": "merge_sort",
+        "documentation": {}
+    },
+    {
         "label": "multiple",
         "kind": 2,
         "importPath": "multiple",
