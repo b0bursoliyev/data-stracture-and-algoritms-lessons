@@ -1,5 +1,13 @@
 [
     {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
         "label": "randrange",
         "importPath": "random",
         "description": "random",
@@ -41,6 +49,15 @@
         "description": "binary_search",
         "peekOfCode": "#item = int(input())\nprint(bianry_search(myList,item))",
         "detail": "binary_search",
+        "documentation": {}
+    },
+    {
+        "label": "search",
+        "kind": 2,
+        "importPath": "breath_first",
+        "description": "breath_first",
+        "peekOfCode": "def search(start,target):\n    search_deque = deque()\n    search_deque += graph[start]\n    searched = set()\n    while search_deque:\n      person = search_deque.popleft()\n      if person not in searched:\n        if person==target:\n          print(f\"{target} ni topdik\")\n          return True",
+        "detail": "breath_first",
         "documentation": {}
     },
     {
