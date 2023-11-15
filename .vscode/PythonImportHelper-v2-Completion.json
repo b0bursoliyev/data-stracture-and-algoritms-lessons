@@ -56,7 +56,16 @@
         "kind": 2,
         "importPath": "breath_first",
         "description": "breath_first",
-        "peekOfCode": "def search(start,target):\n    search_deque = deque()\n    search_deque += graph[start]\n    searched = set()\n    while search_deque:\n      person = search_deque.popleft()\n      if person not in searched:\n        if person==target:\n          print(f\"{target} ni topdik\")\n          return True",
+        "peekOfCode": "def search(start, target):\n    search_deque = deque()\n    search_deque += graph[start]\n    searched = set()\n    while search_deque:\n        person = search_deque.popleft()\n        if person not in searched:\n            if person == target:\n                print(f\"{target} ni topdik\")\n                return True",
+        "detail": "breath_first",
+        "documentation": {}
+    },
+    {
+        "label": "graph",
+        "kind": 5,
+        "importPath": "breath_first",
+        "description": "breath_first",
+        "peekOfCode": "graph = {\n    'ali': ['bekzod', 'suhrob', 'jamshid', 'tolib', 'xusniddin'],\n    'bekzod': ['xalovat', 'davlatyor', 'umid'],\n    'suhrob': ['kamol', 'sanjar', 'otabek'],\n    'jamshid': ['oybek', 'merdon', 'botir'],\n    'tolib': ['lola', 'maftuna', 'laylo'],\n    'xusniddin': ['abduholiq', 'valijon'],\n    'xalovat': [],\n    'davlatyor': [],\n    'umid': [],",
         "detail": "breath_first",
         "documentation": {}
     },
