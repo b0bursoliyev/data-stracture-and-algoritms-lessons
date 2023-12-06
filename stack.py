@@ -21,9 +21,19 @@ class Stack:
         else:
             return self.stack[-1]
 
+    def size(self):
+        return len(self.stack)
+
+    def pprint(self):
+        for i in range(stack.size()):
+            stack.peek()
+
 stack = Stack()
 print(stack.isEmpty())
 print(stack.peek())
-print(stack.push(5))
-print(stack.push(2))
-print(stack.pop())
+items = [1,5,4,8,9,5,6,4,8,5,6,2]
+for i in items:
+    stack.push(i)
+print(stack.size())
+a = stack.pop()
+stack.push(a)
